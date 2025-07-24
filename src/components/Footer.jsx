@@ -118,7 +118,7 @@ const Footer = () => {
                 +91 8591996399
               </a>
               <a 
-                href="mailto:minzs."
+                href="mailto:minzs.aesthetic@gmail.com"
                 className="font-sans text-white/80 hover:text-rosyTaupe transition-colors duration-300 flex items-center justify-center"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 opacity-70" viewBox="0 0 20 20" fill="currentColor">
