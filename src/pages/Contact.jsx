@@ -71,7 +71,7 @@ const Contact = () => {
                 <h3 className="font-semibold text-softText mb-2">Contact Information</h3>
                 <p className="text-secondaryText">
                   Phone: +91 8591996399<br />
-                  Email: minzsaesthetics@gmail.com
+                  Email: minzs.aesthetic@gmail.com
                 </p>
               </div>
 
