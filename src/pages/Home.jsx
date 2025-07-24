@@ -517,31 +517,7 @@ const Home = () => {
             </motion.p>
           </div>
 
-          {/* Service Category Filter */}
-          <motion.div 
-            className="flex flex-wrap justify-center gap-3 mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            {['All', 'Aesthetic Treatments', 'Facials', 'Waxing', 'Nails'].map((category, index) => (
-              <motion.button
-                key={category}
-                className={`px-4 py-2 rounded-full text-sm font-sans tracking-wider transition-all duration-300
-                  ${category === 'All' 
-                    ? 'bg-rosyTaupe text-white shadow-soft' 
-                    : 'bg-white/50 text-deepCharcoal/70 hover:bg-rosyTaupe/10'}`}
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.97 }}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index, duration: 0.4 }}
-              >
-                {category}
-              </motion.button>
-            ))}
-          </motion.div>
+          {/* Service Category Filter removed from home page as requested */}
 
           {/* Services Grid */}
           <motion.div 
