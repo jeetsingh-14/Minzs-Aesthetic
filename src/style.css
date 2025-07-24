@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2a2e30;
+  color: #E5E5E5;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 20%);
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dynamic hover effect for buttons and interactive elements */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtle pulse animation for attention-grabbing elements */
+@keyframes subtle-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse-animation {
+  animation: subtle-pulse 2s infinite ease-in-out;
+}
+
+/* Gradient text effect for headings */
+.gradient-text {
+  background: linear-gradient(90deg, #F0D6A7, #D4AF37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Elegant border animation */
+.border-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.border-animation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #D4AF37;
+  transition: width 0.4s ease;
+}
+
+.border-animation:hover::after {
+  width: 100%;
+}
+
+/* Luxury glass card effect */
+.glass-card {
+  background: rgba(42, 46, 48, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Premium button style */
+.premium-button {
+  background: linear-gradient(135deg, #2a2e30 0%, #333333 100%);
+  border: 1px solid #D4AF37;
+  color: #F0D6A7;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.premium-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.premium-button:hover::before {
+  left: 100%;
+}
+
+/* Gold divider */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  margin: 2rem auto;
+  width: 80%;
+}
+
+/* Luxury text shadow */
+.luxury-text {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.05em;
+}
+
+/* Subtle grid pattern for texture */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Premium section with subtle gradient */
+.premium-section {
+  background: linear-gradient(135deg, rgba(42, 46, 48, 0.8) 0%, rgba(34, 38, 40, 0.9) 100%);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.premium-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #D4AF37, #F0D6A7, #D4AF37);
+}
+
+/* Affordable pricing highlight */
+.affordable-highlight {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.affordable-highlight::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(212, 175, 55, 0.2);
+  z-index: -1;
+}
