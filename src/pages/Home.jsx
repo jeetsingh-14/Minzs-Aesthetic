@@ -185,7 +185,7 @@ const Home = () => {
             variants={staggerContainer}
           >
             <motion.h1 
-              className="text-5xl md:text-6xl font-display text-deepCharcoal mb-4 tracking-elegant leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-display text-deepCharcoal mb-4 tracking-elegant leading-tight"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { 
@@ -209,7 +209,7 @@ const Home = () => {
               transition={{ delay: 0.5, duration: 1 }}
             >
               <motion.p 
-                className="text-2xl md:text-3xl font-display text-rosyTaupe italic font-light tracking-wider relative z-10"
+                className="text-xl sm:text-2xl md:text-3xl font-display text-rosyTaupe italic font-light tracking-wider relative z-10"
                 variants={{
                   hidden: { opacity: 0 },
                   visible: { opacity: 1, transition: { duration: 1.2 } }
@@ -380,7 +380,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <motion.h2 
-                className="text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
+                className="text-2xl sm:text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -482,7 +482,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <motion.h2 
-              className="text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
+              className="text-2xl sm:text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { 
@@ -521,7 +521,7 @@ const Home = () => {
 
           {/* Services Grid */}
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto"
             variants={staggerContainer}
           >
             {topServices.map((service, index) => (
@@ -636,7 +636,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <motion.h2 
-              className="text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
+              className="text-2xl sm:text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { 
@@ -673,7 +673,7 @@ const Home = () => {
 
           {/* Masonry Gallery */}
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 max-w-6xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 max-w-6xl mx-auto"
             variants={staggerContainer}
           >
             {/* Gallery images with different heights for masonry effect */}
@@ -797,7 +797,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <motion.h2 
-              className="text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
+              className="text-2xl sm:text-3xl md:text-4xl font-display text-deepCharcoal mb-4 tracking-wider"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { 
@@ -1010,7 +1010,7 @@ const Home = () => {
                 <div className="md:w-1/2 p-10 flex flex-col justify-center">
                   <motion.div variants={staggerContainer}>
                     <motion.h2 
-                      className="text-3xl md:text-4xl font-heading text-[#5A4B41] mb-4 tracking-wider"
+                      className="text-2xl sm:text-3xl md:text-4xl font-heading text-[#5A4B41] mb-4 tracking-wider"
                       variants={slideInLeft}
                     >
                       Ready to Glow?

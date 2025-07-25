@@ -157,7 +157,7 @@ const ServiceCard = ({
       onTouchEnd={handleTouchEnd}
     >
       <motion.div 
-        className="relative w-full bg-[#fdfaf8] rounded-2xl p-6 shadow-soft overflow-hidden border border-[#f0c4b8]/10 h-[305px]"
+        className="relative w-full bg-[#fdfaf8] rounded-2xl p-4 sm:p-6 shadow-soft overflow-hidden border border-[#f0c4b8]/10 min-h-[280px] sm:min-h-[305px]"
         whileHover={!isTouchDevice ? { scale: 1.02, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03)" } : {}}
       >
         <div className="flex flex-col items-center justify-between h-full">
